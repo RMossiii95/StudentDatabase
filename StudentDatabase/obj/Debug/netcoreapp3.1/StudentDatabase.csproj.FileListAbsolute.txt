@@ -1,0 +1,14 @@
+C:\GitHubDevBuild\repos\StudentDatabase\StudentDatabase\bin\Debug\netcoreapp3.1\StudentDatabase.exe
+C:\GitHubDevBuild\repos\StudentDatabase\StudentDatabase\bin\Debug\netcoreapp3.1\StudentDatabase.deps.json
+C:\GitHubDevBuild\repos\StudentDatabase\StudentDatabase\bin\Debug\netcoreapp3.1\StudentDatabase.runtimeconfig.json
+C:\GitHubDevBuild\repos\StudentDatabase\StudentDatabase\bin\Debug\netcoreapp3.1\StudentDatabase.runtimeconfig.dev.json
+C:\GitHubDevBuild\repos\StudentDatabase\StudentDatabase\bin\Debug\netcoreapp3.1\StudentDatabase.dll
+C:\GitHubDevBuild\repos\StudentDatabase\StudentDatabase\bin\Debug\netcoreapp3.1\StudentDatabase.pdb
+C:\GitHubDevBuild\repos\StudentDatabase\StudentDatabase\obj\Debug\netcoreapp3.1\StudentDatabase.csproj.AssemblyReference.cache
+C:\GitHubDevBuild\repos\StudentDatabase\StudentDatabase\obj\Debug\netcoreapp3.1\StudentDatabase.GeneratedMSBuildEditorConfig.editorconfig
+C:\GitHubDevBuild\repos\StudentDatabase\StudentDatabase\obj\Debug\netcoreapp3.1\StudentDatabase.AssemblyInfoInputs.cache
+C:\GitHubDevBuild\repos\StudentDatabase\StudentDatabase\obj\Debug\netcoreapp3.1\StudentDatabase.AssemblyInfo.cs
+C:\GitHubDevBuild\repos\StudentDatabase\StudentDatabase\obj\Debug\netcoreapp3.1\StudentDatabase.csproj.CoreCompileInputs.cache
+C:\GitHubDevBuild\repos\StudentDatabase\StudentDatabase\obj\Debug\netcoreapp3.1\StudentDatabase.dll
+C:\GitHubDevBuild\repos\StudentDatabase\StudentDatabase\obj\Debug\netcoreapp3.1\StudentDatabase.pdb
+C:\GitHubDevBuild\repos\StudentDatabase\StudentDatabase\obj\Debug\netcoreapp3.1\StudentDatabase.genruntimeconfig.cache

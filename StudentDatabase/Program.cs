@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 
 namespace StudentDatabase
@@ -11,11 +11,24 @@ namespace StudentDatabase
             bool goOn = true;
             while (goOn == true)
             {
-                Console.WriteLine("Welcome to our class!");               
-                string answer = UserInput("Which student would you like to know more about? Please enter 1-10");
-                int name = int.Parse(answer);
-                //int choice = Convert.ToInt32(Console.ReadLine());
-                         
+                bool validNum = false;
+                int validName = 0;
+                while (validNum == false)
+                {
+                    Console.WriteLine("Welcome to our class!");
+                    string answer = UserInput("Which student would you like to know more about? Please enter an integer between 1-10.");
+                    int name = int.Parse(answer);
+                    if (name >= 1 && name <= 10)
+                    {
+                        validNum = true;
+                        validName = name;
+                    }
+                    else
+                    {
+                        Console.WriteLine("That input was not correct, please enter an integer between 1-10.");
+                    }
+                }
+
                 List<string> names = new List<string>();
                 names.Add("Andy Beer");
                 names.Add("Cassly Sullen");
@@ -28,7 +41,7 @@ namespace StudentDatabase
                 names.Add("Cordero Ebberhart");
                 names.Add("Rick Magdaleno");
 
-                Console.WriteLine(names[name -1]);
+                Console.WriteLine(names[validName - 1]);
 
                 string[] hometown = new string[10];
                 hometown[0] = "Hometown is: Berkley, MI";
@@ -54,26 +67,14 @@ namespace StudentDatabase
                 favfood[8] = "Favorite food is: BBQ";
                 favfood[9] = "Favorite food is: Hamburger";
 
-                //I have lost my sanity trying to get this to work but I was attempting to have incorrect input be rejected and run it again but it broke my program.
-                /*if (choice >= 1 && choice <= 10)
-                {
-                    Console.WriteLine();
-                }
-                else if (choice <= 1 || choice >= 10)
-                {
-                    Console.WriteLine("That was not a valid input! Please try again.");
-                    Continue();
-                }*/
-
-
                 string reply = UserInput("Now that you have chosen your student, please choose to learn about either Hometown or FavoriteFood!");
                 if (reply == "Hometown")
                 {
-                    Console.WriteLine(hometown[name - 1]);                
+                    Console.WriteLine(hometown[validName - 1]);
                 }
-                else if(reply == "FavoriteFood")
+                else if (reply == "FavoriteFood")
                 {
-                    Console.WriteLine(favfood[name -1]);
+                    Console.WriteLine(favfood[validName - 1]);
                 }
                 else
                 {
@@ -81,7 +82,7 @@ namespace StudentDatabase
                     Continue();
                 }
 
-               goOn = Continue();
+                goOn = Continue();
             }
 
         }
@@ -90,7 +91,7 @@ namespace StudentDatabase
             Console.WriteLine(prompt);
             string output = Console.ReadLine();
             return output;
-            
+
         }
         public static bool Continue()
         {
@@ -104,7 +105,7 @@ namespace StudentDatabase
             {
                 Console.WriteLine("Good bye!");
                 return false;
-                
+
             }
             else
             {
@@ -112,6 +113,5 @@ namespace StudentDatabase
                 return Continue();
             }
         }
-        
     }
 }
